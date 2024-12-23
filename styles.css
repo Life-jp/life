@@ -96,12 +96,12 @@ li {
     background: #1DA1F2;
 }
 
-.instagram {
-    background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
-}
-
 .youtube {
     background: #FF0000;
+}
+
+.discord {
+    background: #7289da;
 }
 
 /* フッター */
