@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life防災</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="fade-in">
+        <h1>ようこそ！</h1>
+        <p>ここは <span class="highlight">Life防災</span> 公式webサイトです。</p>
+    </header>
+    <main>
+        <section class="about fade-in">
+            <h2>自己紹介</h2>
+            <p>
+                Life防災のwebサイトへようこそ！私たちは、災害情報の提供や防災意識の普及を目指して活動しています。<br>
+                地震や津波などの自然災害に備えるため、正確で迅速な情報を提供し、安全な社会の実現をサポートします。
+            </p>
+        </section>
+        <section class="activities fade-in">
+            <h2>活動内容</h2>
+            <div class="activity-item">
+                <h3>1. 地震・津波情報の発信</h3>
+                <p>
+                    地震や津波が発生した際に、気象庁からの情報を迅速に発信します。<br>
+                    独自のプログラムを利用して地域住民が迅速に対応できるようサポートします。
+                </p>
+            </div>
+            <div class="activity-item">
+                <h3>2. 災害情報の発信</h3>
+                <p>
+                    大雨、台風、火山噴火などの災害に関する情報を提供します。(配信停止中)<br>
+                    地域ごとに異なる災害リスクに合わせた対策情報も発信しています。
+                </p>
+            </div>
+            <div class="activity-item">
+                <h3>3. 防災対策の研究</h3>
+                <p>
+                    新しい防災技術の研究や、地域ごとのリスク分析を行っています。<br>
+                    AIなどを活用した効率的な災害対応を目指しています。
+                </p>
+            </div>
+        </section>
+        <section class="social-links fade-in">
+            <h2>ソーシャルメディア</h2>
+            <p>最新情報や活動内容については、以下のSNSで発信しています。ぜひフォローしてください！</p>
+            <div class="links">
+                <a href="https://x.com/LifeEarth_jp" target="_blank" class="btn twitter">Twitter</a>
+                <a href="https://www.youtube.com/channel/UCHrxYDi_qqf_6qb3utYxZ9Q" target="_blank" class="btn youtube">YouTube</a>
+            </div>
+        </section>
+    </main>
+    <footer class="fade-in">
+        <p>&copy; 2024 Life防災. All Rights Reserved.</p>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const elements = document.querySelectorAll('.fade-in');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1 // 要素が10%見えたら発火
+        });
+
+        elements.forEach(element => observer.observe(element));
+    });
+</script>
+
+</html>
