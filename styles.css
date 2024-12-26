@@ -23,15 +23,15 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 15px;
-}
+    header h1 {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
 
-header .highlight {
-    color: #ffcc00;
-    font-weight: bold;
-}
+    header .highlight {
+        color: #ffcc00;
+        font-weight: bold;
+    }
 
 /* メインセクション */
 main {
@@ -46,8 +46,62 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* 地震情報スタイル */
+.earthquake-info {
+    border: 1px solid #ccc; /* 外枠を追加 */
+    border-radius: 8px; /* 角を丸くする */
+    padding: 16px; /* 内側の余白 */
+    margin: 16px 0; /* 上下の間隔 */
+    background-color: rgba(255, 255, 255, 0.8); /* デフォルト背景色を薄く設定 */
+    transition: background-color 0.3s; /* 背景色の変更をスムーズに */
+    color: #fff; /* テキスト色を白に設定 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* テキスト影 */
+}
+
+/* 地震情報背景色 */
+.max-scale-1 {
+    background-color: rgba(173, 216, 230, 0.7);
+}
+/* 薄い青 (震度1) */
+.max-scale-2 {
+    background-color: rgba(144, 238, 144, 0.7);
+}
+/* 薄い緑 (震度2) */
+.max-scale-3 {
+    background-color: rgba(255, 255, 102, 0.7);
+}
+/* 薄い黄 (震度3) */
+.max-scale-4 {
+    background-color: rgba(255, 165, 0, 0.7);
+}
+/* 薄いオレンジ (震度4) */
+.max-scale-45 {
+    background-color: rgba(255, 140, 0, 0.7);
+}
+/* 濃いオレンジ (震度5弱) */
+.max-scale-5 {
+    background-color: rgba(255, 99, 71, 0.7);
+}
+/* 薄い赤 (震度5強) */
+.max-scale-55 {
+    background-color: rgba(220, 20, 60, 0.7);
+}
+/* 濃い赤 (震度6弱) */
+.max-scale-6 {
+    background-color: rgba(178, 34, 34, 0.7);
+}
+/* 暗赤 (震度6強) */
+.max-scale-7 {
+    background-color: rgba(128, 0, 0, 0.7);
+}
+/* 暗い赤茶 (震度7) */
+.max-scale-unknown {
+    background-color: rgba(211, 211, 211, 0.7);
+}
+/* 薄い灰色 (震度不明) */
+
 /* 見出しスタイル */
-.about h2, .social-links h2, .activities h2 {
+.about h2, .social-links h2, .activities h2, .discord-bot h2, .latest-earthquakes h2 {
     font-size: 2em;
     margin-bottom: 15px;
     color: #ffcc00;
@@ -86,10 +140,10 @@ li {
     transition: all 0.3s ease-in-out;
 }
 
-.btn:hover {
-    transform: translateY(-3px);
-    background: rgba(255, 255, 255, 0.2);
-}
+    .btn:hover {
+        transform: translateY(-3px);
+        background: rgba(255, 255, 255, 0.2);
+    }
 
 /* 各ソーシャルメディアボタン */
 .twitter {
@@ -134,6 +188,7 @@ footer {
         padding: 8px 15px;
     }
 }
+
 /* フェードイン用クラス */
 .fade-in {
     opacity: 0;
@@ -141,7 +196,7 @@ footer {
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
